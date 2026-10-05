@@ -9,112 +9,117 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="153dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="76dp"
         android:text="Registration form"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="136dp" />
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:inputType="text"
         android:text="Username"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="121dp" />
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Agree with terms & conditions"
+        android:textAlignment="textStart"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="497dp" />
 
     <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="Full Name"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="166dp" />
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="423dp" />
 
-    <EditText
-        android:id="@+id/editTextText3"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Country"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="211dp" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Email"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="256dp" />
-
-    <EditText
-        android:id="@+id/editTextText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Phone number"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="301dp" />
+        android:text="Gender:"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="385dp" />
 
     <RadioButton
         android:id="@+id/radioButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Male"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton3"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        tools:layout_editor_absoluteY="346dp" />
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="375dp" />
 
     <RadioButton
         android:id="@+id/radioButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Female"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="346dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="59dp"
-        android:layout_height="52dp"
-        android:text="Gender"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="346dp" />
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="375dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editTextText5"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="453dp" />
+        android:inputType="text"
+        android:text="Phone number"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="316dp" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Agree with terms & conditions"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="541dp" />
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Email"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Country"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Full Name"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="166dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Create account"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="620dp" />
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="572dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
