@@ -1,125 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="76dp"
-        android:text="Registration form"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Username"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="116dp" />
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/title"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:text="Agree with terms & conditions"
-        android:textAlignment="textStart"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="497dp" />
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/username"
+            android:inputType="text" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="423dp" />
+        <EditText
+            android:id="@+id/editFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/full_name"
+            android:inputType="textPersonName" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Gender:"
-        android:textAlignment="textStart"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="385dp" />
+        <EditText
+            android:id="@+id/editCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/country"
+            android:inputType="text" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Male"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="375dp" />
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Female"
-        tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="375dp" />
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/phone"
+            android:inputType="phone" />
 
-    <EditText
-        android:id="@+id/editTextText5"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Phone number"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="316dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Email"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="266dp" />
+            <TextView
+                android:id="@+id/textGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/gender" />
 
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Country"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="216dp" />
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Full Name"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="166dp" />
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/male" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create account"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="572dp" />
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female" />
+            </RadioGroup>
+        </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/checkTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="@string/terms" />
+
+        <Button
+            android:id="@+id/buttonCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="@string/create_account" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">registracijskiObrazec</string>
+    <string name="title">Registration form</string>
+    <string name="username">Username</string>
+    <string name="full_name">Full name</string>
+    <string name="country">Country</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone number</string>
+    <string name="password">Password</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="terms">Agree with Terms &amp; Conditions</string>
+    <string name="create_account">Create account</string>
 </resources>
